@@ -1,0 +1,43 @@
+{
+  "name": "harmony-lifebond-app",
+  "version": "1.0.0",
+  "description": "Harmony Lifebond - Community Support Mobile & Web Application",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/api",
+    "packages/web",
+    "packages/mobile",
+    "packages/admin"
+  ],
+  "scripts": {
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "format": "lerna run format",
+    "start": "node packages/api/dist/index.js"
+  },
+  "keywords": [
+    "harmony",
+    "lifebond",
+    "community",
+    "support",
+    "mutual-assistance",
+    "mobile-app",
+    "pwa"
+  ],
+  "author": "Harmony Lifebond Team",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demi-god-epg/harmony-app.git"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
